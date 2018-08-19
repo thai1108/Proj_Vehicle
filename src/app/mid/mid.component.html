@@ -1,0 +1,585 @@
+<div class="container">
+    <h6>HOÀN THIỆN HỒ SƠ DÀNH CHO CHỦ XE CÁ NHÂN</h6>
+
+    <form class="form-main">
+        <p>Thông tin cá nhân xe</p>
+        <div class="row personal-form">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="name" class="col-md-3">Họ và tên:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Nguyễn Văn A" id="name">
+                    <span class="name-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="country" class="col-md-3 ">Quốc tịch:</label>
+                    <select class="col-md-8 text-inp" id="country">
+            <option value="male">Việt Nam</option>
+            <option value="female">Lào</option>
+          </select>
+                    <span class=" name-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="id-type" class="col-md-3">Loại giấy tờ:</label>
+                    <select id="id-type" class="col-md-8 text-inp" placeholder="Nguyễn Văn A">
+            <option value="CMND">Chứng minh thư nhân dân</option>
+            <option value="CMND">Chứng minh thư nhân dân 1</option>
+            <option value="CMND">Chứng minh thư nhân dân 2</option>
+          </select>
+                    <span class="id-type-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="id" class="col-md-3">Số:</label>
+                    <input class="col-md-8 text-inp" type="number" placeholder="Số" id="id">
+                    <span class="id-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="date" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="date">
+                    <span class="name-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="id-residence" class="col-md-3">Nơi cấp:</label>
+                    <select class="col-md-8 text-inp" id="id-residence">
+            <option value="HN">Công an TP Hà Nội</option>
+          </select>
+                    <span class="id-residence-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="sex" class="col-md-3">Giới tính:</label>
+                    <select id="sex" class="col-md-8 text-inp">
+            <option value="male">Nam</option>
+            <option value="female">Nữ</option>
+          </select>
+                    <span class="name-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="nation" class="col-md-3">Dân tộc:</label>
+                    <select id="nation" class="col-md-8 text-inp">
+            <option value="male">Kinh</option>
+            <option value="female">Thái</option>
+          </select>
+                    <span class="nation-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="phone" class="col-md-3">Số điện thoại:</label>
+                    <input class="col-md-8 text-inp" type="number" placeholder="012431635" id="phone">
+                    <span class="phone-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="email" class="col-md-3">Email:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Nguyenvana@gmail.com" id="email" email>
+                    <span class="email-valid"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <p>Nơi cư trú</p>
+        <div class="row residence-form">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="residence-country" class="col-md-3">Quốc gia:</label>
+                    <select class="col-md-8 text-inp" id="residence-country">
+            <option value="VN">Việt Nam</option>
+          </select>
+                    <span class="residence-country-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="residence-city" class="col-md-3" style="font-size: 14px;">Tỉnh/Thành phố:</label>
+                    <select class="col-md-8 text-inp" id="residence-city">
+            <option value="HN">Hà Nội</option>
+          </select>
+                    <span class="residence-city-valid">&nbsp;*</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="residence-district" class="col-md-3">Quận/ Huyện:</label>
+                    <select class="col-md-8 text-inp" id="residence-district" value="">
+            <option value="0">-- Chọn Quận/Huyện --</option>
+          </select>
+                    <span class="residence-district-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="residence-ward" class="col-md-3">Phường xã:</label>
+                    <select class="col-md-8 text-inp" id="residence-ward">
+            <option value="0">-- Chọn Phường/Xã --</option>
+          </select>
+                    <span class="residence-ward-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <!-- <div class="col-md-12">
+                <div class="row">
+                    <label for="residence-num" class="col-md-2">Số nhà/ đường:</label>
+                    <input type="text" class="col-md-9_5 text-inp" id="residence-num" placeholder="Số nhà, đường" />
+                </div>
+            </div> -->
+        </div>
+
+        <hr>
+
+        <p>Chỗ ở hiện tại</p>
+
+        <div class="row addr-form">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="addr-country" class="col-md-3">Quốc gia:</label>
+                    <select class="col-md-8 text-inp" id="addr-country">
+            <option value="VN">Việt Nam</option>
+          </select>
+                    <span class="addr-country-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="addr-city" class="col-md-3" style="font-size: 14px;">Tỉnh/Thành phố:</label>
+                    <select class="col-md-8 text-inp" id="addr-city">
+            <option value="HN">Hà Nội</option>
+          </select>
+                    <span class="addr-city-valid">&nbsp;*</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="addr-district" class="col-md-3">Quận/ Huyện:</label>
+                    <select class="col-md-8 text-inp" id="addr-district" value="">
+            <option value="0">-- Chọn Quận/Huyện --</option>
+          </select>
+                    <span class="addr-district-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="addr-ward" class="col-md-3">Phường xã:</label>
+                    <select class="col-md-8 text-inp" id="addr-ward">
+            <option value="0">-- Chọn Phường/Xã --</option>
+          </select>
+                    <span class="addr-ward-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <label for="addr-num" class="col-md-2">Số nhà/ đường:</label>
+                    <input type="text" class="col-md-9_5 text-inp" id="addr-num" placeholder="Số nhà, đường" />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>Người liên hệ</p>
+
+        <div class="row contact-form">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="contact-name" class="col-md-3">Họ và tên:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Nguyễn Văn A" id="contact-name">
+                </div>
+
+                <div class="row">
+                    <label for="contact-phone" class="col-md-3">Số điện thoại:</label>
+                    <input class="col-md-8 text-inp" type="number" placeholder="" id="contact-phone">
+                </div>
+
+                <div class="row">
+                    <label for="contact-email" class="col-md-3">Email:</label>
+                    <input class="col-md-8 text-inp" type="number" placeholder="" id="email-phone">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p>Thông tin khác ( Nếu có )</p>
+
+        <div class="row other-inf">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-type" class="col-md-3">Giấy phép:</label>
+                    <select class="col-md-8 text-inp" id="lisence-type">
+            <option value="0">Giấy phép kinh doanh vận tải</option>
+          </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-num" class="col-md-3">Số giấy phép:</label>
+                    <input class="col-md-8 text-inp" placeholder="Số giấy phép" id="lisence-num" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-date" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="lisence-date">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-addr" class="col-md-3">Nơi cấp:</label>
+                    <select class="col-md-8 text-inp" id="lisence-addr">
+            <option value="HN">Công an TP Hà Nội</option>
+          </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-name" class="col-md-3">Họ và tên:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Họ và tên người điều hành vận tải" id="lisence-name">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-num2" class="col-md-3">Số giấy phép:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Số giấy phép điều hành" id="lisence-num2" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-date2" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="lisence-date2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="lisence-addr2" class="col-md-3">Nơi cấp:</label>
+                    <select class="col-md-8 text-inp" id="lisence-addr2">
+            <option value="HN">Công an TP Hà Nội</option>
+          </select>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p>Tài khoản ngân hàng</p>
+        <div class="row bank">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank1" class="col-md-3">Chọn ngân hàng 1:</label>
+                    <select class="col-md-8 text-inp" id="bank1">
+            <option value="0">Vietcombank</option>
+          </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-num1" class="col-md-3">Số tài khoản:</label>
+                    <input class="col-md-8 text-inp" placeholder="Số tài khoản" id="bank-num1" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-name1" class="col-md-3">Người thụ hưởng:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Họ và tên người thụ hưởng" id="bank-name1">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-branch1" class="col-md-3">Chi nhánh:</label>
+                    <select class="col-md-8 text-inp" id="lisence-branch1">
+            <option value="0">Chi nhánh ngân hàng</option>
+          </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank2" class="col-md-3">Chọn ngân hàng 2:</label>
+                    <select class="col-md-8 text-inp" id="bank2">
+            <option value="0">Vietcombank</option>
+          </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-num2" class="col-md-3">Số tài khoản:</label>
+                    <input class="col-md-8 text-inp" placeholder="Số tài khoản" id="bank-num2" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-name2" class="col-md-3">Người thụ hưởng:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Họ và tên người thụ hưởng" id="bank-name2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="bank-branch2" class="col-md-3">Chi nhánh:</label>
+                    <select class="col-md-8 text-inp" id="lisence-branch2">
+            <option value="0">Chi nhánh ngân hàng</option>
+          </select>
+                </div>
+            </div>
+            <button class="my-btn offset-md-4 col-md-4">Thêm tài khoản ngân hàng</button>
+        </div>
+
+        <hr>
+        <p>Đăng ký xe</p>
+        <div class="row vehicle">
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-id" class="col-md-3">Mã xe của bạn:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="KGKU2018ZPE" id="vehicle" />
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-area" class="col-md-3">Tuyến xe:</label>
+                    <select class="col-md-8 text-inp" id="vehicle-area">
+                    <option value="0">-- Chạy liên tỉnh --</option>
+                  </select>
+                    <span class="vehicle-area-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-tpye" class="col-md-3">Loại xe:</label>
+                    <select class="col-md-8 text-inp" id="vehicle-tpye">
+                    <option value="0">-- Xe Container --</option>
+                  </select>
+                    <span class="vehicle-type-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-num" class="col-md-3">Biển số:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Nhập biển số" id="vehicle-num" />
+                    <span class="vehicle-num-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-weight" class="col-md-3">Tải trọng:</label>
+                    <select class="col-md-8 text-inp" id="vehicle-weight">
+                    <option value="0">-- 10 Tấn --</option>
+                  </select>
+                    <span class="vehicle-weight-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-date" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-date">
+                    <span class="vehicle-date-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-issued" class="col-md-3">Nơi cấp:</label>
+                    <select class="col-md-8 text-inp" id="vehicle-issued">
+            <option value="HN">Công an TP Hà Nội</option>
+          </select>
+                    <span class="vehicle-issued-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-reg-num" class="col-md-3">Số đăng kiểm xe:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Nhập số đăng kiểm xe" id="vehicle-reg-num" />
+                    <span class="vehicle-reg-num-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-reg-date" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-reg-date">
+                    <span class="vehicle-reg-date-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-reg-issued" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-reg-issued" />
+                    <span class="vehicle-reg-issued-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance" class="col-md-3">Bảo hiểm dân sự:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Số bảo hiểm dân sự" id="vehicle-insurance" />
+                    <span class="vehicle-insurance-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance-date" class="col-md-3">Ngày cấp:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-insurance-date">
+                    <span class="vehicle-insurance-date-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance-issued" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-insurance-issued" />
+                    <span class="vehicle-insurance-issued-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance2" class="col-md-3">Bảo hiểm hàng hóa:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Số bảo hiểm hàng hóa" id="vehicle-insurance2" />
+                    <span class="vehicle-insurance2-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance2-date" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-insurance2-date">
+                    <span class="vehicle-insurance2-date-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-insurance2-issued" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-insurance2-issued" />
+                    <span class="vehicle-insurance2-issued-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-monitoring" class="col-md-3">Giám sát:</label>
+                    <input class="col-md-8 text-inp" type="text" placeholder="Giấy xác nhận xe đã được gắn thiết bị giám sát hành trình" id="vehicle-monitoring" />
+                    <span class="vehicle-monitoring-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-monitoring-date" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-monitoring-date">
+                    <span class="vehicle-monitoring-date-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <label for="vehicle-monitoring-issued" class="col-md-3">Ngày hết hạn:</label>
+                    <input class="col-md-8 text-inp" type="date" id="vehicle-monitoring-issued" />
+                    <span class="vehicle-monitoring-issued-valid">&nbsp;*</span>
+                </div>
+            </div>
+            <div class="col-md-12">Các giấy tờ phương tiện</div>
+            <div class="col-md-6">
+                <label for="vehicle-pic1">Đăng ký xe (ảnh chụp trang bìa và các trang liên quan):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" accept="image/*" value="File ảnh đính kèm" id="vehicle-pic1" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="vehicle-pic2">Đăng kiểm xe (chụp 2 mặt của giất tờ):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="vehicle-pic2" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="vehicle-pic3">Bảo hiểm dân sự xe (chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="vehicle-pic3" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="vehicle-pic3">Bảo hiểm dân sự xe (chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="vehicle-pic3" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="vehicle-pic4">Bảo hiểm hàng hóa xe (chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="vehicle-pic4" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="vehicle-pic4">Giấy xác nhận đã được gắn thiết bị giám sát hành trình(chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="vehicle-pic4" />
+                </div>
+            </div>
+            <button class="my-btn offset-md-4 col-md-4">Đăng ký thêm xe</button>
+        </div>
+        <!-- end Vehicle -->
+        <hr>
+        <p>Hồ sơ đính kèm</p>
+        <p class="note">Vui lòng đính kèm các tệp tin hình ảnh về các loại giấy tờ sau để giúp chúng tôi xác minh và giải quyết nhanh hồ sơ của ông/bà</p>
+        <div class="row file">
+            <div class="col-md-6">
+                <label for="file-pic1">Sổ hộ khẩu (ảnh chụp trang bìa và các trang liên quan):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="file-pic1" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="file-pic2">Chứng minh thư/Hộ chiếu/Thẻ căn cước công dân của chủ xe (chụp 2 mặt của giấy tờ):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="file-pic2" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="file-pic3">Giấy phép kinh doanh vận tải (chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="file-pic3" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="file-pic4">Giấy phép điều hành vận tải (chụp 2 mặt của giấy phép):</label>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <input class="my-btn offset-md-3 col-md-8" type="file" value="File ảnh đính kèm" id="file-pic4" />
+                </div>
+            </div>
+        </div>
+        <!-- end File -->
+    </form>
+    <!--end Form-main-->
+    <button class="my-btn offset-md-4 col-md-4" id="btnComplete">Hoàn thiện hồ sơ</button>
+
+
+
+</div>
+
+
+

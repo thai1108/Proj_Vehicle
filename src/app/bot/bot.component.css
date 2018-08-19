@@ -1,0 +1,62 @@
+footer {
+    color: white;
+    background-color: #171516;
+}
+
+footer hr {
+    border-top: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.footer-reg {
+    padding: 45px 0px;
+}
+
+.footer-reg button {
+    height: 35px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.footer-reg button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.contact {
+    padding-bottom: 70px;
+}
+
+.contact-addr {
+    font-size: 15px;
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+}
+
+.contact p {
+    margin-bottom: 5px;
+}
+
+.contact p span {
+    font-size: 11px;
+}
+
+.copyright {
+    padding: 15px 0;
+    background-color: black;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-reg button {
+        margin: 10px;
+    }
+}
